@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Devdawakhana</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="hdr">
+      <div>
+        <img
+          src="./images/logo.png"
+          alt="Devdawakhana Logo"
+          style="height: 80px; width: 100px"
+        />
+      </div>
+
+      <!-- Hamburger menu icon for mobile -->
+      <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        &#9776;
+        <!-- Unicode hamburger icon -->
+      </button>
+
+      <!-- Wrap nav links in a container -->
+      <nav id="navLinks" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cart.html">Cart</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="t&c.html">Terms & Conditions</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Welcome to <br />Devdawakhana</h1>
+          <p>Explore natural wellness with our Ayurvedic products.</p>
+        </div>
+        <div class="hero-image-wrapper">
+          <a href="https://wa.me/918077776264" target="_blank" class="btn"
+            >Book a Consultation</a
+          >
+          <!-- <img src="./images/hero.jpeg" alt="Ayurvedic Herbs" class="hero-image"> -->
+        </div>
+      </div>
+    </section>
+    <div class="products-heading">
+      <h2>Our Products</h2>
+    </div>
+
+    <section class="products">
+      <div
+        class="product"
+        data-name="Dev Sukranu Vardhak Capsule"
+        data-price="1050"
+      >
+        <img src="./images/Sukranu.jpeg" alt="Combo" />
+        <h3>Dev Sukranu Vardhak Capsule</h3>
+        <p>Quantity: 1 Pack</p>
+        <p>Description: शुक्राणु की कमी (Alicospermia) के लिए प्रभावी आयुर्वेदिक उपचार। यह पुरुषों में शुक्राणु की संख्या व गुणवत्ता बढ़ाने में मदद करता है, जिससे संतानोत्पत्ति की समस्या दूर होकर वैवाहिक जीवन सुखमय बनता है।</p>
+        <p><strong>Offer Price: ₹1050</strong></p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div
+        class="product"
+        data-name="Dev Sukranu Vardhak Capsule 2 combo"
+        data-price="1799"
+      >
+        <img src="./images/Sukranu.jpeg" alt="Combo" />
+        <h3>Dev Sukranu Vardhak Capsule</h3>
+        <p>Quantity: 2 Pack</p>
+        <p>Description: शुक्राणु की कमी (Alicospermia) के लिए प्रभावी आयुर्वेदिक उपचार। यह पुरुषों में शुक्राणु की संख्या व गुणवत्ता बढ़ाने में मदद करता है, जिससे संतानोत्पत्ति की समस्या दूर होकर वैवाहिक जीवन सुखमय बनता है।</p>
+        <p><strong>Offer Price: ₹1799</strong></p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div
+        class="product"
+        data-name="Dev Sukranu Vardhak Capsule 4 combo"
+        data-price="3499"
+      >
+        <img src="./images/Sukranu.jpeg" alt="Combo" />
+        <h3>Dev Sukranu Vardhak Capsule</h3>
+        <p>Quantity: 4 Pack</p>
+        <p>Description: शुक्राणु की कमी (Alicospermia) के लिए प्रभावी आयुर्वेदिक उपचार। यह पुरुषों में शुक्राणु की संख्या व गुणवत्ता बढ़ाने में मदद करता है, जिससे संतानोत्पत्ति की समस्या दूर होकर वैवाहिक जीवन सुखमय बनता है।</p>
+        <p><strong>Offer Price: ₹3499</strong></p>
+        <button>Add to Cart</button>
+      </div>
+
+
+      <div
+        class="product"
+        data-name="Fine Force Capsule"
+        data-price="1499"
+      >
+        <img src="./images/fineforce.jpeg" alt="Combo" />
+        <h3>Fine Force Capsule</h3>
+        <p>Quantity: 1 Pack</p>
+        <p>Description: शीघ्रपतन की समस्या के लिए प्रभावी आयुर्वेदिक उपचार। यह उत्पाद वीर्य नियंत्रण बढ़ाकर आत्मविश्वास, शक्ति और यौन संतुलन में सुधार करता है, जिससे वैवाहिक जीवन सुखमय बनता है।</p>
+        <p><strong>Offer Price: ₹1499</strong></p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div
+        class="product"
+        data-name="Fine Force Capsule 2 combo"
+        data-price="3499"
+      >
+        <img src="./images/fineforce.jpeg" alt="Combo" />
+        <h3>Fine Force Capsule</h3>
+        <p>Quantity: 2 Pack</p>
+        <p>Description: शीघ्रपतन की समस्या के लिए प्रभावी आयुर्वेदिक उपचार। यह उत्पाद वीर्य नियंत्रण बढ़ाकर आत्मविश्वास, शक्ति और यौन संतुलन में सुधार करता है, जिससे वैवाहिक जीवन सुखमय बनता है।</p>
+        <p><strong>Offer Price: ₹2799</strong></p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div
+        class="product"
+        data-name="Dev Health Powder"
+        data-price="499"
+      >
+        <img src="./images/healthpowder.jpeg" alt="Combo" />
+        <h3>Dev Health Powder</h3>
+        <p>Quantity: 1 Pack</p>
+        <p>Description:</p>
+        <p><strong>Offer Price: ₹499</strong></p>
+        <button>Add to Cart</button>
+      </div>
+
+      <div
+        class="product"
+        data-name="Dev Health Powder 2 combo"
+        data-price="899"
+      >
+        <img src="./images/healthpowder.jpeg" alt="Combo" />
+        <h3>Dev Health Powder</h3>
+        <p>Quantity: 2 Pack</p>
+        <p>Description:</p>
+        <p><strong>Offer Price: ₹899</strong></p>
+        <button>Add to Cart</button>
+      </div>
+    </section>
+    <!-- About Us Section -->
+    
+    
+    <!-- Advice -->
+    <section
+      id="advice"
+      style="
+        background: #f5f2e7;
+        padding: 70px 20px;
+        font-family: 'Noto Sans Devanagari', Arial, sans-serif;
+        color: #333;
+        box-sizing: border-box;
+      "
+    >
+      <div style="max-width: 900px; margin: auto; text-align: center">
+        <h2
+          style="
+            font-size: 30px;
+            color: #2e572f;
+            margin-bottom: 25px;
+            font-weight: 700;
+          "
+        >
+          Dev Dawakhana
+        </h2>
+
+        <p
+          style="
+            font-size: 17px;
+            line-height: 1.9;
+            text-align: justify;
+            color: #444;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          "
+        >
+          आप सभी रोगी भाइयों को मेरी सलाह है कि आप अपनी बीमारी के बारे में शर्म
+          व संकोच न करें, ऐसा करने से बीमारी बढ़ती है व शरीर खोखला हो जाता है।
+          स्वस्थ व्यक्ति भी धीरे-धीरे इन बीमारियों के कारण दुबला-पतला व कमजोर
+          दिखने लगता है। ऐसी बीमारियों का समय रहते सही इलाज होने पर मनुष्य अपने
+          जीवन को बर्बाद होने से बचा सकता है। क्योंकि सिर्फ पोस्टर लगाने या अधिक
+          प्रचार करवाने से एक व्यक्ति अच्छा डॉक्टर नहीं बनता है। इलाज के लिए
+          योग्य व अनुभवी होना आवश्यक है। हमारी क्लीनिक पर हाईली क्वालिफाइड
+          डॉक्टरों द्वारा सफल इलाज किया जाता है। हमारी क्लीनिक अच्छे व कामयाब
+          इलाज के लिए जानी जाती है। हमारे यहाँ आयुर्वेद, यूनानी व एक्यूपंक्चर की
+          पद्धति द्वारा ऐसी बीमारियों का कामयाब इलाज किया जाता है। ताकत व जवानी
+          के लिए सुखी व विवाहित जीवन के लिए एक बार अवश्य मिलें।
+        </p>
+
+        <div
+          style="
+            margin-top: 25px;
+            background: #fff3cd;
+            padding: 15px 20px;
+            border-left: 6px solid #d4a017;
+            border-radius: 10px;
+            text-align: justify;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+          "
+        >
+          <strong>नोट :</strong> अगर आप जगह-जगह इलाज करवा कर थक चुके हैं, या
+          बाजारू दवाओं गोली व कैप्सूल का इस्तेमाल भी कर चुके हैं, इधर-उधर इलाज
+          कराकर समय के साथ-साथ पैसे व जिंदगी बर्बाद कर चुके हैं, तो मिलते-जुलते
+          नाम व रास्तों में बैठे नीम हकीमों से बचें। फायदे के बजाय नुकसान भी हो
+          सकता है।
+        </div>
+      </div>
+    </section>
+    <section
+      id="services"
+      style="
+        background: #fff8dc;
+        padding: 60px 20px;
+        font-family: Arial, sans-serif;
+        box-sizing: border-box;
+      "
+    >
+      <div style="max-width: 1100px; margin: auto; text-align: center">
+        <h2 style="font-size: 32px; margin-bottom: 10px; color: #222">
+          Our Services
+        </h2>
+        <p style="font-size: 16px; color: #666; margin-bottom: 40px">
+          Guidance, healing, and solutions for your all sexual life problems
+        </p>
+
+        <div
+          style="
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+          "
+        >
+          <!-- Service Card Template -->
+          <div
+            style="
+              background: white;
+              padding: 25px;
+              border-radius: 12px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s, box-shadow 0.3s;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="./images/PE.jpg"
+              alt="Penis Enlargement"
+              style="
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                object-fit: cover;
+              "
+            />
+            <h3 style="font-size: 20px; color: #222; margin-bottom: 10px">
+              Penis Enlargement
+            </h3>
+            <a
+              href="https://wa.me/918077776264"
+              target="_blank"
+              style="
+                display: inline-block;
+                padding: 10px 18px;
+                background: #28a745;
+                color: #fff;
+                border-radius: 6px;
+                text-decoration: none;
+                font-size: 15px;
+              "
+              >Book a Consultation</a
+            >
+          </div>
+
+          <div
+            style="
+              background: white;
+              padding: 25px;
+              border-radius: 12px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s, box-shadow 0.3s;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="./images/prem.webp"
+              alt="Premature Ejaculation"
+              style="
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                object-fit: cover;
+              "
+            />
+            <h3 style="font-size: 20px; color: #222; margin-bottom: 10px">
+              Premature Ejaculation
+            </h3>
+            <a
+              href="https://wa.me/918077776264"
+              target="_blank"
+              style="
+                display: inline-block;
+                padding: 10px 18px;
+                background: #28a745;
+                color: #fff;
+                border-radius: 6px;
+                text-decoration: none;
+                font-size: 15px;
+              "
+              >Book a Consultation</a
+            >
+          </div>
+
+          <div
+            style="
+              background: white;
+              padding: 25px;
+              border-radius: 12px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s, box-shadow 0.3s;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="./images/ED.jpg"
+              alt="Erectile Dysfunction"
+              style="
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                object-fit: cover;
+              "
+            />
+            <h3 style="font-size: 20px; color: #222; margin-bottom: 10px">
+              Erectile Dysfunction
+            </h3>
+            <a
+              href="https://wa.me/918077776264"
+              target="_blank"
+              style="
+                display: inline-block;
+                padding: 10px 18px;
+                background: #28a745;
+                color: #fff;
+                border-radius: 6px;
+                text-decoration: none;
+                font-size: 15px;
+              "
+              >Book a Consultation</a
+            >
+          </div>
+
+          <div
+            style="
+              background: white;
+              padding: 25px;
+              border-radius: 12px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s, box-shadow 0.3s;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="./images/infer.webp"
+              alt="Infertility"
+              style="
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                object-fit: cover;
+              "
+            />
+            <h3 style="font-size: 20px; color: #222; margin-bottom: 10px">
+              Infertility
+            </h3>
+            <a
+              href="https://wa.me/918077776264"
+              target="_blank"
+              style="
+                display: inline-block;
+                padding: 10px 18px;
+                background: #28a745;
+                color: #fff;
+                border-radius: 6px;
+                text-decoration: none;
+                font-size: 15px;
+              "
+              >Book a Consultation</a
+            >
+          </div>
+
+          <div
+            style="
+              background: white;
+              padding: 25px;
+              border-radius: 12px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s, box-shadow 0.3s;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="./images/mastur.jpg"
+              alt="Masturbation"
+              style="
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                object-fit: cover;
+              "
+            />
+            <h3 style="font-size: 20px; color: #222; margin-bottom: 10px">
+              Masturbation
+            </h3>
+            <a
+              href="https://wa.me/918077776264"
+              target="_blank"
+              style="
+                display: inline-block;
+                padding: 10px 18px;
+                background: #28a745;
+                color: #fff;
+                border-radius: 6px;
+                text-decoration: none;
+                font-size: 15px;
+              "
+              >Book a Consultation</a
+            >
+          </div>
+
+          <div
+            style="
+              background: white;
+              padding: 25px;
+              border-radius: 12px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+              transition: transform 0.3s, box-shadow 0.3s;
+              overflow: hidden;
+            "
+          >
+            <img
+              src="./images/nightfall.webp"
+              alt="Nightfall"
+              style="
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                margin-bottom: 15px;
+                object-fit: cover;
+              "
+            />
+            <h3 style="font-size: 20px; color: #222; margin-bottom: 10px">
+              Nightfall
+            </h3>
+            <a
+              href="https://wa.me/918077776264"
+              target="_blank"
+              style="
+                display: inline-block;
+                padding: 10px 18px;
+                background: #28a745;
+                color: #fff;
+                border-radius: 6px;
+                text-decoration: none;
+                font-size: 15px;
+              "
+              >Book a Consultation</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="./images/logo.png" alt="About Ayurveda" />
+        </div>
+        <div class="about-text">
+          <h2>About Us</h2>
+          <p>
+            We are passionate about promoting Ayurvedic wellness through
+            nature-powered remedies. Our products are crafted using traditional
+            herbs and holistic healing practices passed down through
+            generations. We believe in the power of natural ingredients to
+            restore balance, vitality, and peace of mind.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-details">
+        <p>📞 +918077776264</p>
+
+        <p>🌐 Devdawakhana</p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="./images/logo.png" alt="Logo" />
+          <p>Devdawakhana</p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#contact">Contact</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="t&c.html">Terms & Conditions</a>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+
+          <p>📞 +918077776264</p>
+
+          <p>
+            <a href="mailto:support@Devdawakhana.com"
+              >📧 support@Devdawakhana.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Devdawakhana. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/918077776264" class="whatsapp-chat" target="_blank"
+      >Chat on WhatsApp</a
+    >
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+
+        // For accessibility: toggle aria-expanded
+        const expanded = hamburger.getAttribute("aria-expanded") === "true";
+        hamburger.setAttribute("aria-expanded", !expanded);
+      });
+    </script>
+  </body>
+</html>

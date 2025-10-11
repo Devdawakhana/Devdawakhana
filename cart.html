@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="cart.js" defer></script>
+</head>
+<body>
+  <header>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <img src="./images/logo.png" alt="Devdawakhana Logo" style="height: 80px;">
+    </div>
+  
+    <!-- Hamburger menu icon for mobile -->
+    <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      &#9776; <!-- Unicode hamburger icon -->
+    </button>
+  
+    <!-- Wrap nav links in a container -->
+    <nav id="navLinks" class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart</a>
+      <a href="t&c.html">Terms & Conditions</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+    </nav>
+  </header>
+  <div id="cart-items"></div>
+  <h3 id="total">Total: ₹0</h3>
+  <form id="order-form">
+    <input name="name" placeholder="Your Name" required>
+    <input name="email" placeholder="Your Email" required>
+    <input name="phone" placeholder="Your Phone" required>
+    <input name="pincode" placeholder="Area Pin Code" required pattern="[0-9]{6}" title="6-digit Indian PIN code">
+    <textarea name="address" placeholder="Delivery Address" required></textarea>
+  
+    <label>
+      <input type="radio" name="payment_method" value="Online" checked> Prepaid (Razorpay)
+    </label>
+    <label>
+      <input type="radio" name="payment_method" value="COD"> Cash on Delivery
+    </label>
+  
+    <button type="submit">Checkout</button>
+  </form>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="./images/logo.png" alt="Logo" />
+        <p>Devdawakhana</p>
+      </div>
+  
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="t&c.html">Terms & Conditions</a>
+      </div>
+  
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        
+        <p>📞 +918077776264</p>
+       
+        <p><a href="mailto:support@Devdawakhana.com">📧 support@Devdawakhana.com</a></p>
+      </div>
+  
+      
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Devdawakhana. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  <script>
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+
+  // For accessibility: toggle aria-expanded
+  const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+  hamburger.setAttribute('aria-expanded', !expanded);
+});
+
+  </script>
+  
+</body>
+</html>
