@@ -17,21 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-const popup = document.getElementById('popup');
-const knowMoreBtn = document.querySelector('.know-more');
-const closePopup = document.getElementById('closePopup');
-
-knowMoreBtn.addEventListener('click', () => {
-  popup.style.display = 'flex';
-});
-
-closePopup.addEventListener('click', () => {
-  popup.style.display = 'none';
-});
-
-popup.addEventListener('click', (e) => {
-  if (e.target === popup) popup.style.display = 'none';
-});
 
 
 

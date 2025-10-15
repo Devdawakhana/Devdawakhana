@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       formElement.setAttribute("method", "POST");
       formElement.setAttribute(
         "action",
-        "https://script.google.com/macros/s/AKfycby58Z8RkNUW22TEG8p1FXUqfTc-lIsLN8l3HEGf__85aJD2moMtqEuf99Hm1opBAFX3/exec"
+        "https://script.google.com/macros/s/AKfycbxf0vrhkd2RCytjwvbZv3L-01JWODx-HD7wfPXIzIVs1pkqVdJZjaZPaSLMiQ8KKsrDtA/exec"
       );
 
       const fields = {
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
       submitToSheet(); // Use 'COD' as fake payment ID
     } else {
       const razorpayOptions = {
-        key: "",
+        key: "rzp_test_RTIT2YyHqlbVXt",
         amount: total * 100,
         currency: "INR",
         name: "Ayurveda Wellness",
